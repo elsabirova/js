@@ -1,0 +1,23 @@
+body {
+	box-sizing: border-box;
+}
+/*.wrapper {
+	height: 600px;
+	overflow: auto;
+}
+.goods {
+	height: 500px;
+}*/
+
+.goods-item {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #2dc9b0;
+	background-color: #bbe1ff;
+	border-radius: 8px;
+	width: 200px;
+}
+
+.error {
+	color: red;
+}
