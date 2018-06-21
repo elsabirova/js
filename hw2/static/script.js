@@ -12,14 +12,6 @@ const getData = (url) => {
         .catch(e => Promise.reject(e));
 };
 
-const isScrolledIntoView = (el) => {
-    const rect = el.getBoundingClientRect();
-    const elTop = rect.top;
-    const elBottom = rect.bottom;
-    
-    //if visible
-    return (elTop >= 0) && (elBottom <= window.innerHeight);
-};
 //getData('/users/0').then(data => console.log(data))
 //Task 1
 /*getData('/users/0')

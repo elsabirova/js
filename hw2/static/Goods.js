@@ -5,11 +5,11 @@ class GoodsList {
         //количество подгружаемых записей
         this.count = count;
         //начиная с
-        this.begin = 0;
+        this.begin = begin;
         getData('/goods/').then(data => {
             this.items = data;
             this.init();
-        }).catch(err => $(this.styleClass).html(`<div class="error">Ошибка сервера</div>`));
+        }).catch(() => $(this.styleClass).html(`<div class="error">Ошибка загрузки данных</div>`));
     
         this.scrolling = this.scrolling.bind(this);
     }
